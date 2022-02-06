@@ -1,0 +1,197 @@
+div.ui-datepicker{
+ font-size:11px;
+}
+
+html, body, div, ul
+{
+	margin              :   0;
+	padding             :   0;
+}
+
+body
+{
+	background          :   #E3F3D1;
+	font                :   normal 12px/18px Verdana, sans-serif;
+}
+
+p
+{
+	margin              :   0;
+	padding             :   7px 0;
+}
+
+a
+{
+	outline             :   none;
+}
+
+a img
+{
+	border              :   1px solid #7CBF33;
+	padding             :   2px;
+	margin              :   10px 20px 10px 0;
+	vertical-align      :   top;
+}
+a img:hover
+{
+	border              :   1px solid #5A8B25;
+}
+
+a img.last
+{
+	margin-right        :   0;	
+}
+
+ul
+{
+	margin-bottom       :   6px;
+	padding-left        :   30px;
+}
+
+a:link, a:visited, a:hover
+{
+	text-decoration     :   none;
+}
+
+.Title {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #003300;
+}
+
+.SubTitle {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #003300;
+}
+
+.header
+{
+    height              :   125px;
+    border-color        :   #A4D76A;
+    background-color    :   #A4D76A;
+    background-image    :   url(./../bilder/titelbild.jpg)
+}
+
+.menue
+{
+    vertical-align      :   top; 
+    background-color    :   #A4D76A;
+    width               :   115px;
+}
+
+.submenue
+{
+    border:0;
+}
+
+.content
+{
+	background-color    :   White;
+	vertical-align      :   top;
+	width               :   683px;
+	max-width           :   683px;
+	height              :   600px;
+	max-height          :   600px;
+}
+
+.label 
+{
+    display: inline-block; 
+    width: 150px;
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+/* * * * *   M A I N   M E N U E  * * * * */
+#Nav a
+{
+    display             :   block;
+    height              :   37px;
+	width				: 	115px;
+	background-color	: 	#7CBF33;
+	font-size			: 	13px;
+	font-weight			: 	bold;
+	color				: 	#E8E8E8;
+	font-family			: 	Arial, Helvetica, sans-serif;
+	padding-left		: 	10px;
+	border              :   0px solid #A4D76A;
+	border-left         :   4px solid #A4D76A;
+	border-bottom       :   6px solid #A4D76A;
+	border-right        :   4px solid #A4D76A;
+	text-decoration		: 	none;
+    text-align          :   left;
+    vertical-align      :   middle;
+}
+
+#Nav a:hover 
+{
+	background-color	: 	#5A8B25;
+	font-size			: 	14px;
+	font-weight			: 	bold;
+	color				: 	#FFF;
+}
+
+#Nav  .NavCur 
+{
+    background-color	: 	#5A8B25;
+	font-size			: 	14px;
+	color				: 	#FFF;
+}
+
+#Nav  .NavOne 
+{
+    line-height         :   37px;
+}
+
+
+#Nav  .NavCurOne 
+{
+    line-height         :   37px;
+    background-color	: 	#5A8B25;
+	font-size			: 	14px;
+	color				: 	#FFF;
+}
+
+
+
+/* * * * *   S U B   M E N U E  * * * * */
+#SubNav a
+{
+    display             :   block;
+    /*background-color	: 	#7CBF33;*/
+    background-color	: 	#5A8B25;
+	font-size			: 	13px;
+	font-weight			: 	bold;
+	color				: 	#E8E8E8;
+	font-family			: 	Arial, Helvetica, sans-serif;
+	text-decoration		: 	none;
+	width				:	130px;
+	height				:	18px;
+    text-align          :   center;
+    border              :   0px solid;
+    border-right        :   2px solid #FFF;
+}
+
+#SubNav a:hover 
+{
+    background-color	: 	#304914;
+   /* background-color	: 	#5A8B25;*/
+	font-size			: 	14px;
+	color				: 	#FFF;
+}
+
+#SubNav  .SubNavCur 
+{
+    background-color	: 	#304914;
+  /*  background-color	: 	#5A8B25;*/
+	font-size			: 	14px;
+	color				: 	#FFF;
+}
+.Comment {
+	color: #333;
+	font-size: 9px;
+}

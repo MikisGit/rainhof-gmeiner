@@ -1,0 +1,137 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Title" content="Rainhof Gmeiner - Ferienwohnungen in Schwarzwald / Bad Peterstal-Griesbach" />
+    <meta name="Publisher" content="Markus Gmeiner" />
+    <meta name="Copyright" content="Gmeiner Rainhof" />
+    <meta name="Keywords" content="Bad Peterstal, Baden, Entspannen, Erholen, Familien freundlich, Ferien, Ferienwohnung, fewo, Gästezimmer, Griesbach, Kinder, Kur, Natur, Ortenau, Radfahren, Renchtal, Schluchsee, Schwarzwald, Thermalbad, Therme, Urlaub, Wandern, Wellness, Zimmer, Ski" />
+    <meta name="Description" content="Kontaktdaten / Ferienwohnung Rainhof Gmeiner im wunderschoenen Urlaubsziel Bad Peterstal / Schwarzwald" />
+    <meta name="Abstract" content="Kontaktdaten / Ferienwohnung Rainhof Gmeiner im wunderschoenen Urlaubsziel Bad Peterstal / Schwarzwald" />
+    <meta name="page-topic" content="Reise Tourismus, Ferienwohnungen, Ferienwohnung, Ferienhaus, Ferienhäuser, Reisen, Tourismus, Urlaub, Individualurlaub, Ferien, Entspannen, Schwazwald Urlaub" />
+    <meta name="Robots" content="INDEX,FOLLOW" />
+    <meta name="Language" content="Deutsch" />
+    <title>Ferienwohnung Rainhof Gmeiner - Bad Peterstal / Schwarzwald - Kontaktdaten</title>
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <link href="css/rainhof.css" rel="stylesheet" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/datepicker-de.js"></script>
+    <script>
+        $(function () {
+            $.datepicker.setDefaults($.datepicker.regional["de"]);
+            $("#anreise").datepicker({
+                minDate: +1,
+                maxDate: "+1Y",
+                onClose: function (selectedDate) {
+                    $("#anreise").datepicker("option", "minDate", selectedDate);
+                }
+            });
+            $("#abreise").datepicker({
+                minDate: +1,
+                maxDate: "+1Y",
+                onClose: function (selectedDate) {
+                    $("#abreise").datepicker("option", "maxDate", selectedDate);
+                }
+            });
+            $("#erwachsene").spinner({
+                max: 6,
+                min: 1
+            });
+            $("#kinder").spinner({
+                max: 6,
+                min: 0
+            });
+        });
+    </script>
+	</head>
+<body>
+    <table border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#A4D76A">
+        <tr><td class="header" colspan="2"></td></tr>
+        <tr>
+            <td class="menue">
+                <!--  M A I N   M E N U E   b e g i n  -->
+                <div id="Nav">
+                    <a href="index.html">Herzlich<br />willkommen</a>
+                    <a href="Ferienwohnungen.html">Ferien-<br />wohnungen</a>
+                    <a class="NavOne" href="Lage.html">Lage</a>
+                    <a class="NavOne" href="Preise.html">Preise</a>
+                    <a class="NavOne" href="Sehenswertes.html">Sehenswertes</a>
+                    <a class="NavCurOne" href="Kontakt.html">Kontakt</a>
+                    <a class="NavOne" href="Anfahrt.html">Anfahrt</a>
+                    <a class="NavOne" href="Bildergalerie.html">Bildergalerie</a>
+                    <a class="NavOne" href="Impressum.html">Impressum</a>
+                    <a href="Datenschutzerklaerung.html">Datenschutz-<br />erklärung</a>
+                </div>
+                <!--  M A I N   M E N U E   e n d  -->
+
+            </td>
+            <td class="content">
+                <br />
+                <blockquote class="Inhalt">
+                    <!--  C O N T E N T   b e g i n -->
+                    <p align="justify" class="Title">Kontakt</p>
+                    <p>Sie  sind interessiert an einem Aufenthalt in unserem Haus und möchten uns eine  Reservierungsanfrage schicken oder haben weitere Fragen zu unseren  Ferienwohnungen?</p>
+                    <p>                    Füllen  Sie einfach die folgenden Felder aus und stellen Sie uns Ihre Frage in dem Feld  &quot;Text&quot;, wir setzen uns mit Ihnen in Verbindung.</p>
+                    <p>&nbsp;</p>
+                    <form method="post" action="/cgi-bin/formmailer.pl">
+                        <input type="hidden" name="recipient" value="reservierung" />
+                        <input type="hidden" name="subject" value="Anfrage Ferienwohnung" />
+                        <input type="hidden" name="print_config" value="email,subject,realname" />
+                        <input type="hidden" name="redirect" value="../bestaetigung.html" />
+                        <input type="hidden" name="required" value="realname,Strasse,Ort,Telefon" />
+                        <input type="hidden" name="print_blank_fields" value="1" />
+
+                        <span class="label" style="margin-bottom: 0">Art der Anfrage</span>
+                        <input id="Anfrage" type="radio" name="Anfragetyp" value="Anfrage" checked="checked" />
+                        <label for="Anfrage">Unverbindliche Anfrage</label>
+                        <br />
+                        <span class="label"></span>
+                        <input id="Buchug" type="radio" name="Anfragetyp" value="Buchug" />
+                        <label for="Buchug">Buchung</label>
+                        <br />
+                        <span class="label">Vor- und Nachname</span>
+                        <input style="width: 425px" id="realname" type="text" name="realname" />
+                        <br />
+                        <span class="label">Strasse</span>
+                        <input style="width: 425px" id="Strasse" type="text" name="Strasse" />
+                        <br />
+                        <span class="label">PLZ / Ort</span>
+                        <input style="width: 60px" id="Postleitzahl" type="text" name="Postleitzahl" />
+                        <input style="width: 357px" id="Ort" type="text" name="Ort" />
+                        <br />
+                        <span class="label">Telefon</span>
+                        <input style="width: 425px" id="Telefon" type="text" name="Telefon" />
+                        <br />
+                        <span class="label">E-Mail</span>
+                        <input style="width: 425px" id="email" type="text" name="email" />
+                        <br />
+                        <span class="label">Buchung</span>
+                        <label for="anreise" style="display: inline-block; width: 70px">von</label>
+                        <input style="width: 90px" type="text" id="anreise" name="anreise" />
+                        <span style="display: inline-block; width: 85px"></span>
+                        <label for="abreise" style="display: inline-block; width: 70px">bis</label>
+                        <input style="width: 90px" type="text" id="abreise" name="abreise" />
+                        <br />
+                        <span class="label">Anzahl Personen</span>
+                        <label for="erwachsene" style="display: inline-block; width: 70px">Erwachsene</label>
+                        <input style="width: 65px" id="erwachsene" name="erwachsene" value="1" />
+                        <span style="display: inline-block; width: 85px"></span>
+                        <label for="kinder" style="display: inline-block; width: 70px">Kinder</label>
+                        <input style="width: 65px" id="kinder" name="kinder" value="0" />
+                        <br />
+                        <span class="label">Kommentar</span>
+                        <textarea name="komentar" rows="3" cols="58"></textarea>
+                        <br />
+                        <span class="label"></span>
+                        <input type="submit" value="Absenden" name="whgres" />
+                        <input type="reset" value="Eingabe löschen" />
+                    </form>
+
+                    <!--  C O N T E N T   e n d -->
+                </blockquote>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
